@@ -1,0 +1,70 @@
+
+
+A.1. Deployment (Windows OS)
+	Parallel programming techniques need the following software to be installed on a machine:
+	 1. Visual Studio
+         2. OpenMP
+	 3. CUDA Toolkit
+	 4. GIMP
+   
+  A.1.1 How to install Visual Studio
+	
+  Step 1 - Make sure your computer is ready for Visual Studio
+  Step 2 - Download Visual Studio
+  Step 3 - Install the Visual Studio installer
+  Step 4 - Choose workloads
+		- For core C and C++ support, choose the "Desktop development with C++" workload.
+  Step 5 - Choose individual components (Optional) 
+  Step 6 - Install language packs (Optional)
+  Step 7 - Change the installation location (Optional)
+
+  Now you have installed Visual Studio which comes with OpenMP
+  
+  A.1.2 How to enable OpenMP in Visual Studio
+ 
+  Step 1 - Click Project->properties
+  Step 2 - Configuration: Release-> C/C++ -> language -> OpenMP Support -> Yes
+  Step 3 - Apply
+
+  A.1.3 How to install Cuda Toolkit
+  Step 0 - got to https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html
+  Step 1 - Verify the system has a CUDA-capable GPU.
+  Step 2 - Download the NVIDIA CUDA Toolkit.
+  Step 3 - Install the NVIDIA CUDA Toolkit.
+  Step 4 -Test that the installed software runs correctly and communicates with the hardware.
+      
+      A.1.3.1 How to enable Cuda to an application
+
+	  Step 0 - Open the Visual Studio project-> right click on the project name,
+          Step 1 - Select Build Dependencies->Build Customizations...,
+	  Step 2 - Select the CUDA Toolkit version you would like to target. 
+
+          *Alternatively, you can configure your project always to build with the most recently installed version of the CUDA Toolkit. 
+            First add a CUDA build customization to your project as above.Then, right click on the project name and select Properties.
+            Under CUDA C/C++, select Common, and set the CUDA Toolkit Custom Dir field to $(CUDA_PATH) .
+            Note that the $(CUDA_PATH) environment variable is set by the installer.*
+
+ A.1.4 How to install Gimp
+
+  Go to gimp.org/downloads and select Download the Installer. Once you've got the installer, open it and install GIMP.
+
+A.2. Programs (How to run programs)
+
+  A.2.1 OpenMP
+	
+	Step 1 -Use A.1.2 in Visual Studio
+	Step 2 - build ->Release-> run
+
+ A.2.2 Cuda
+	
+       Step 1- use A.1.3.1
+       Step 2- build -> run
+
+ A.2.3 Sequential
+
+       Step 1 - just run on Visual Studio
+	
+
+ 
+ 
+	
