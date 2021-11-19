@@ -1,0 +1,2 @@
+C:\Users\lungi\source\repos\OpenMP Test\x64\Release\OpenMP Test.exe
+C:\Users\Lungisani\Desktop\repos\OpenMP Test\x64\Release\OpenMP Test.exe
